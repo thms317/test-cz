@@ -22,6 +22,7 @@ jobs:
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
             changelog_increment_filename: body.md
+            extra_requirements: cz-changeup
 
       - name: Release
         uses: softprops/action-gh-release@v1
